@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Digital - Warung Sumber Rejeki</title>
+    <!-- Menghubungkan file CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk tipografi modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Banner Warung -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><i class="fa-solid fa-utensils"></i> Warung Sumber Rejeki</h1>
+            <p class="tagline">Nikmati kelezatan kuliner legendaris dengan cita rasa terbaik!</p>
+        </div>
+    </header>
+
+    <!-- Bagian Utama Konten Menu -->
+    <main class="container">
+        <section class="menu-section">
+            <h2 class="section-title">Daftar Menu Spesial</h2>
+            
+            <!-- Grid untuk daftar menu -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Data menu akan dimasukkan secara dinamis menggunakan JavaScript -->
+            </div>
+        </section>
+
+        <!-- Bagian Keranjang / Ringkasan Pesanan Interaktif -->
+        <section class="order-summary" id="orderSummary">
+            <h3><i class="fa-solid fa-cart-shopping"></i> Ringkasan Pesanan</h3>
+            <div id="cartItems" class="cart-items">
+                <p class="empty-cart">Belum ada menu yang dipilih.</p>
+            </div>
+            <div class="cart-total">
+                <span>Total Estimasi:</span>
+                <span id="totalPrice">Rp 0</span>
+            </div>
+            <button class="btn-checkout" id="checkoutBtn" onclick="checkoutPesanan()">Pesan Sekarang</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Warung Sumber Rejeki. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Menghubungkan file JavaScript Eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
